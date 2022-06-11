@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Suppport from './components/Suppport';
+import AllInOne from './components/AllInOne';
+import Pricing from './components/Pricing';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+  {/* <h1 className='text-4xl text-blue-400'>God</h1> */}
+  <Navbar/>
+  <Hero/>
+  <About/>
+  <Suppport/>
+  <AllInOne/>
+  <Pricing/>
+  <Footer/>
+
+    </>
+  )
 }
 
-export default App;
+export default App
